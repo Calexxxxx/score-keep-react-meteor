@@ -10,6 +10,9 @@ This application is part of a course on meteor and is build with react, mongoDB 
 * prop-types
 * numeral
 
+Live version of this application can be found on https://score-keep-calexxxxx.herokuapp.com
+
+
 ## Installation
 
 clone the project and cd into the folder
