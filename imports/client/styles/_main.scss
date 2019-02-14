@@ -1,0 +1,17 @@
+@import './variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: $font-size;
+  color: $primary;
+}
+
+@import './components/header';
+@import './components/wrapper';
+@import './components/form';

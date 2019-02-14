@@ -1,0 +1,66 @@
+form {
+    max-width: $max-width;
+    width: 90%;
+    margin: 4rem auto 2rem auto;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid $primary;
+    border-radius: 3px;
+    box-shadow: 0 5px 12px lighten($primary, 80%);
+    background-color: $white;
+    position: relative;
+    input,
+    label {
+        transition: all 0.2s;
+        touch-action: manipulation;
+    }
+    label {
+        position: absolute;
+        z-index: 1;
+        transform-origin: left top;
+    }
+    input {
+        width: 60%;
+        height: 48px;
+        padding: .5rem 0;
+        border: none;
+        border-bottom: 1px solid $primary;
+        font-size: $font-size;
+        position: relative;
+        &:not(:placeholder-shown),
+        &:focus,
+        &:active {
+            outline: none;
+            + label {
+                transform: translate(0, -1.275rem) scale(0.8);
+            }
+        }
+    }
+    button {
+        width: 30%;
+        height: 48px;
+        background-color: $white;
+        border: 1px solid $primary;
+        text-transform: uppercase;
+        outline: none;
+        transition: background 200ms ease-in-out, color 200ms ease-in-out, transform 100ms ease-in-out;
+        &:focus,
+        &:active {
+            outline: none;
+        }
+        &:focus,
+        &:hover {
+            background-color: $primary;
+            color: $white;
+        }
+        &:active {
+            transform: scale(.9);
+        }
+    }
+    @media screen and (min-width: 768px) {
+        width: 100%;
+    }
+}
